@@ -1,0 +1,13 @@
+step 1 : create database with name "slim37"
+
+step 2 : run below sql in above database
+
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE IF NOT EXISTS `user` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `userName` varchar(250) NOT NULL,
+  `emailId` varchar(250) DEFAULT NULL,
+  `mobNo` varchar(250) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+COMMIT;
